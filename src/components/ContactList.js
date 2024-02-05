@@ -29,14 +29,10 @@ const ContactList = (props) => {
         return(
             identifiers.map((identifier) => function(){
                 {identifier.primary &&
-                    
-                    {identifier.type == "BOL" && 
                         <>
                             <span>{identifier.type}</span>
                             <span>{identifier.value}</span>
                         </>
-                    }
-                    
                 }
             })
         );
